@@ -1,0 +1,16 @@
+<h2>Hero Detail</h2>
+<h3>
+	<i>Just a FormControl</i>
+</h3>
+<!-- <label class="center-block"> name:<input class="form-control"
+	[(formControl)]="name" />
+</label> -->
+<form [formGroup]="heroForm">
+	<label class="center-block"> Name:<input class="form-control"
+		formControlName="name" />
+	</label>
+	<label class="center-block"> Age:<input class="form-control"
+		formControlName="age" />
+	</label>
+</form>
+<div>Form value:{{heroForm.value | json}}</div>
